@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import ContextApi from './../context/ContextApi';
+import { Link, useNavigate } from 'react-router-dom';
 const Service = () => {
+  const navigate=useNavigate()
     const {userdata,setUserdata} =useContext(ContextApi);
     console.log(userdata)
 
@@ -14,7 +16,14 @@ const Service = () => {
 <div className='flex' >
 
 <h1 style={{color:"white"}}>{userdata && userdata[0]?.name}  Welcome To  Our Website</h1>
-<p style={{textDecoration:"underline",fontSize:"22px",textAlign:"center"}}>Your Login Details</p>
+<div className='span'>
+{userdata && 
+<>
+<p style={{textDecoration:"underline",fontSize:"22px",textAlign:"center"}}>Your Login Details </p>
+<Link to='/'> <span title='click here to logout'>Logout</span></Link>
+</>
+}
+</div>
 </div>
 </div>
 <div className='serv'>

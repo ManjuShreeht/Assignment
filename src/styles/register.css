@@ -52,7 +52,8 @@ form div{
 }
 
 button{
-   
+    background-color: #2196f3;
+    color: white;
     padding: 5px 15px;
     cursor: pointer;
     border-radius: 10px;
