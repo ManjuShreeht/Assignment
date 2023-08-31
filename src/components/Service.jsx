@@ -15,7 +15,7 @@ const Service = () => {
 <div className='home1'>
 <div className='flex' >
 
-<h1 style={{color:"white"}}>{userdata && userdata[0]?.name}  Welcome To  Our Website</h1>
+<h1 style={{color:"white"}}>{userdata && userdata[0]?.name.toUpperCase() }  Welcome To  Our Website</h1>
 <div className='span'>
 {userdata && 
 <>
@@ -26,7 +26,7 @@ const Service = () => {
 </div>
 </div>
 </div>
-<div className='serv'>
+<div className='home1 serv'>
     {
     userdata &&
     <>

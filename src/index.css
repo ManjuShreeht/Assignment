@@ -59,6 +59,8 @@ a{
   .flex{
     width:800px;
     align-items: center;
+    word-break: break-all;
+    word-wrap: break-word;
   }
   .flex h1{
    padding: 30px;
@@ -67,6 +69,8 @@ a{
   }
   .flex p{
     color: rgb(250, 244, 233);
+  
+    
   }
   .col{
     display: flex;
@@ -102,17 +106,13 @@ a{
     width:100%;
     height:100vh;
     background-image: url('https://images.unsplash.com/photo-1485529910432-783b455774fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-  
+  background-repeat: no-repeat;
   }
   .serv{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:15px;
-    width:400px;
-    margin-left: 450px;
-    margin-right: 250px;
+   padding: 10px 10px !important;
+   width: 350px !important;
+   margin-left: 450px !important;
+   text-align: center;
     background-color: black;
     border-radius: 10px;
     box-shadow: 0px 0px 1px 1px white;
@@ -124,3 +124,67 @@ a{
     font-size: 20px;
     
   }
+
+  @media screen and (max-width: 600px){
+    .home{
+      width: 100%;
+      height: 100vh;
+      
+      
+      
+      
+    }
+          .flex{
+        width:330px;
+        align-items: center;
+        word-break: break-all;
+        
+       
+      }
+      .flex h1{
+       margin-bottom: 10px;
+        text-align: center;
+       
+      }
+      .serv{
+        padding: 10px 10px !important;
+        width: 300px !important;
+        margin-left: 50px !important;
+        text-align: center;
+        word-wrap: break-word;
+         background-color: black;
+         border-radius: 10px;
+         box-shadow: 0px 0px 1px 1px white;
+      }
+       }
+
+
+       @media only screen and (min-width: 600px) and (max-width:900px) {
+        
+        .flex{
+          width:500px;
+          align-items: center;
+          word-break: break-all;
+          padding: 20px 30px;
+          
+         
+        }
+        .flex{
+          width:600px;
+      
+          word-break: break-all;
+          
+         
+        }
+        .serv{
+        
+          width: 400px !important;
+          margin-left: 180px !important;
+          
+          word-wrap: break-word;
+           
+        }
+        
+
+
+        }
